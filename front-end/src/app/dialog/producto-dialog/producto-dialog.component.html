@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>Add Product</h2>
+<mat-dialog-content>
+  <form [formGroup]="productForm">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="nombre"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="precio" placeholder="0" class="right-align"/>
+    <span matTextPrefix>$&nbsp;</span>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Quantity</mat-label>
+    <input matInput formControlName="cantidad"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>category</mat-label>
+    <mat-select formControlName="categoria">
+      @for (category of categories; track category) {
+        <mat-option [value]="category.id">{{category.nombre}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Product Image URL</mat-label>
+    <input matInput type="url" formControlName="image"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput formControlName="descripcion"/>
+  </mat-form-field>
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="add()">Ok</button>
+</mat-dialog-actions>

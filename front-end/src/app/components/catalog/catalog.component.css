@@ -1,0 +1,34 @@
+.marco{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.imagen{
+  width: 150px;
+  height: 150px;
+}
+
+.contenido{
+  height: 100px;
+}
+
+.card{
+  width: 400px;
+  height: 250px;
+  margin-left: 4%;
+}
+
+.cantidad{
+  width: 150px;
+}
+
+.btn-add{
+margin-left: 30%;
+}
+
+.menu-button{
+  position: fixed;
+  bottom: 1.5rem;
+  right: 30px;
+  background-color: yellow;
+}

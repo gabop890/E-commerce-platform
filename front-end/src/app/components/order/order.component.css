@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+}
+
+tr.mat-mdc-footer-row td {
+  font-weight: bold;
+}
+
+.btn-pago{
+  margin-left: 45%;
+}
+
+.card{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}

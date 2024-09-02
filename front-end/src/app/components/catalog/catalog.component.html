@@ -1,0 +1,23 @@
+<div class="marco">
+  <mat-grid-list cols="3" class="grid-list">
+    @for (product of products; track product) {
+    <mat-grid-tile class="tile">
+      <mat-card class="card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>{{product.nombre}}</mat-card-title>
+            <mat-card-subtitle>${{product.precio}}</mat-card-subtitle>
+            <img mat-card-xl-image src="{{product.image}}" class="imagen" (click)="verImagen(product)">
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-actions>
+          <button mat-flat-button class="btn-add" (click)="addToCart(product)">Add to cart</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    }
+  </mat-grid-list>
+</div>
+<button mat-fab (click)="clickMenu()" class="menu-button" [routerLink]="['../order']">
+    <mat-icon matBadge="{{productList?.length}}">add_shopping_cart</mat-icon>
+</button>

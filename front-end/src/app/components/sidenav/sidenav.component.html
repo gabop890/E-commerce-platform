@@ -1,0 +1,52 @@
+<mat-toolbar class="colorToolbar">
+  <button class="btnm-menu" mat-icon-button (click)="sidenav.toggle()" matTooltip="Menu" style>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <!--
+  <img class="logo-prof" src="assets/img/profamilia.png" alt="">
+  -->
+  <span class="toolbar-item-spacer mt-1 title-toolbar">E-commerce Platform</span>
+  <span class="example-spacer"></span>
+  <span class="title-toolbar span-cargo">
+    <mat-icon>account_circle</mat-icon>{{cargo}}</span>
+</mat-toolbar>
+
+<mat-drawer-container class="app-container">
+  <mat-drawer #sidenav mode="over" [class.mat-elevation-z4]="true" class="app-sidenav" opened="true">
+    <mat-nav-list>
+      <div class="container-fluid mt-3 mb-3 text-center">
+        <img class="logo-prof" src="img/logo-linktic.svg" alt="">
+      </div>
+      <mat-divider class="mb-3" style="width: 85%;margin: auto;"></mat-divider>
+      <br>
+      <mat-list-item routerLink="#" class="items-menu">
+        <mat-icon>home</mat-icon>
+        &nbsp;
+        <span class="mt-1" style="color:rgb(147, 150, 160)">
+          Inicio
+        </span>
+      </mat-list-item>
+      <mat-divider class="liniaDividir mb-4"></mat-divider>
+      <mat-divider class="liniaDividir mb-4"></mat-divider>
+      <mat-list-item class="items-menu" [routerLink]="['catalog']">
+        <mat-icon>find_in_page</mat-icon><span class="mt-1">Product catalog</span>
+      </mat-list-item>
+      <mat-list-item class="items-menu" [routerLink]="['order']">
+        <mat-icon>shopping_cart</mat-icon><span class="mt-1">Order</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item class="items-menu" [routerLink]="['productManagement']">
+        <mat-icon>shopping_cart</mat-icon><span class="mt-1">Product Management</span>
+      </mat-list-item>
+      <mat-list-item class="items-menu" [routerLink]="['categoryManagement']">
+        <mat-icon>shopping_cart</mat-icon><span class="mt-1">Category Management</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item (click)="logout()" class="btn-exit">
+        <mat-icon>logout</mat-icon>Logout</mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

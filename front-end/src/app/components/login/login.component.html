@@ -1,0 +1,29 @@
+<div class="divfondo">
+  <mat-card class="card">
+    <mat-card-header class="header">
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title class="titulo">Bienvenido a la app E-commerce Platform</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="content">
+      <mat-grid-list cols="2">
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="img-column">
+            <img class="logo-prof" src="img/logo-linktic.svg" alt="">
+          </div>
+        </mat-grid-tile>
+        <div class="login">
+          <mat-form-field appearance="outline">
+            <mat-label>Usuario</mat-label>
+            <input matInput type="text" (keypress)="enter($event)" [(ngModel)]="loginData.username">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" [(ngModel)]="loginData.password" (keypress)="enter($event)">
+          </mat-form-field>
+          <button mat-flat-button (click)="login()">
+            Ingresar</button>
+        </div>
+      </mat-grid-list>
+    </mat-card-content>
+  </mat-card>
+</div>
