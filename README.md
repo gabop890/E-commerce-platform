@@ -55,6 +55,13 @@ http://localhost:8080/swagger-ui/index.html#/
 En el proyecto back-end en el archivo "application.properties" se encuentran las credenciales para conectarse a la base de datos, en mi caso utilice una base cloud en https://railway.app/
 
 para conectase a otra base de datos mySQL solo hay que cambiar las credenciales y correr el archivo DDL que se encuentra en el repositorio.
+
+## Diagrams
+
+![image](https://github.com/user-attachments/assets/7dbde8bc-8835-418c-90dc-029d6a4a9ef2)
+![image](https://github.com/user-attachments/assets/2aee4bc1-3012-4ddf-9954-4fb51577c4c9)
+
+
 ## Authors
 
 - [@gabop890](https://github.com/gabop890)
