@@ -1,0 +1,43 @@
+CREATE TABLE categoria (
+    id int NOT NULL AUTO_INCREMENT,
+    nombre varchar(255) NOT NULL,
+    estado varchar(255)
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE usuario (
+    id int NOT NULL AUTO_INCREMENT,
+    tipoIdentificacion varchar(255) NOT NULL,
+    numeroIdentificacion varchar(255) NOT NULL,
+	nombre varchar(255) NOT NULL
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE producto (
+    id int NOT NULL AUTO_INCREMENT,
+    nombre varchar(255) NOT NULL,
+    precio varchar(255) NOT NULL,
+	cantidad varchar(255) NOT NULL,
+	estado varchar(255) NOT NULL,
+	categoria varchar(255) NOT NULL,
+	image varchar(255) NOT NULL,
+	descripcion varchar(255) NOT NULL,
+    PRIMARY KEY (id),
+	fk_categoria int,
+	FOREIGN KEY (fk_categoria) REFERENCES categoria(id)
+);
+
+CREATE TABLE orden (
+    id int NOT NULL AUTO_INCREMENT,
+    cantidad int NOT NULL,
+    estado varchar(255)
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE orden (
+    idOrden int NOT NULL,
+    idProducto int NOT NULL,
+    cantidad varchar(255),
+	total int,
+    CONSTRAINT PK_Person PRIMARY KEY (idOrden,idProducto)
+);
