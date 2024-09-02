@@ -1,0 +1,11 @@
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\config\CorsConfiguration.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\controller\CategoriaController.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\controller\ProductoController.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\ECommercePlatformApplication.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\model\ServiceResponse.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\persistence\entity\Category.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\persistence\entity\Product.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\persistence\repository\CategoryRepository.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\persistence\repository\ProductRepository.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\service\CategoryService.java
+C:\tempApp\E-commerce Platform\back-end\src\main\java\com\linktic\E_commerce\Platform\service\ProductService.java

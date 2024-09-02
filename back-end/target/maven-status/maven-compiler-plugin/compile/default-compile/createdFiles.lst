@@ -1,0 +1,11 @@
+com\linktic\E_commerce\Platform\config\CorsConfiguration.class
+com\linktic\E_commerce\Platform\persistence\entity\Product.class
+com\linktic\E_commerce\Platform\persistence\repository\ProductRepository.class
+com\linktic\E_commerce\Platform\persistence\repository\CategoryRepository.class
+com\linktic\E_commerce\Platform\ECommercePlatformApplication.class
+com\linktic\E_commerce\Platform\service\ProductService.class
+com\linktic\E_commerce\Platform\controller\ProductoController.class
+com\linktic\E_commerce\Platform\service\CategoryService.class
+com\linktic\E_commerce\Platform\model\ServiceResponse.class
+com\linktic\E_commerce\Platform\persistence\entity\Category.class
+com\linktic\E_commerce\Platform\controller\CategoriaController.class
